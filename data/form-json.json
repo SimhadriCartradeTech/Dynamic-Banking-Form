@@ -1,0 +1,1003 @@
+{
+  "status": 1,
+  "details": [
+    {
+      "personal": [
+        {
+          "fieldName": "First Name",
+          "fieldKey": "fname",
+          "fieldId": 40,
+          "fieldType": "text",
+          "attributes": {
+            "mandatory": "y",
+            "infoText": "",
+            "locked": 0,
+            "sortOrder": 1,
+            "validationRule": "alpha",
+            "placeHolder": "Enter First Name",
+            "min": 3,
+            "max": 20
+          }
+        },
+        {
+          "fieldName": "Last Name",
+          "fieldKey": "lname",
+          "fieldId": 42,
+          "fieldType": "text",
+          "attributes": {
+            "mandatory": "y",
+            "infoText": "",
+            "locked": 0,
+            "sortOrder": 2,
+            "validationRule": "alpha",
+            "placeHolder": "Enter Last Name",
+            "min": 1,
+            "max": 20
+          }
+        },
+        {
+          "fieldName": "Gender",
+          "fieldKey": "gender",
+          "fieldId": 46,
+          "fieldType": "dropdown",
+          "attributes": {
+            "mandatory": "y",
+            "infoText": "",
+            "locked": 0,
+            "sortOrder": 3,
+            "validationRule": "",
+            "values": [
+              {
+                "option": "Male",
+                "child": ""
+              },
+              {
+                "option": "Female",
+                "child": ""
+              },
+              {
+                "option": "Other",
+                "child": ""
+              }
+            ]
+          }
+        },
+        {
+          "fieldName": "Date of Birth",
+          "fieldKey": "dob",
+          "fieldId": 47,
+          "fieldType": "calender",
+          "attributes": {
+            "mandatory": "y",
+            "infoText": "",
+            "locked": 1,
+            "sortOrder": 4,
+            "validationRule": "",
+            "placeHolder": "Enter yyyy-mm-dd formate"
+          }
+        },
+        {
+          "fieldName": "Mobile Number",
+          "fieldKey": "mobile",
+          "fieldId": 45,
+          "fieldType": "text",
+          "attributes": {
+            "mandatory": "y",
+            "infoText": "",
+            "locked": 1,
+            "sortOrder": 5,
+            "validationRule": "mobile",
+            "placeHolder": "Mobile number",
+            "min": 10,
+            "max": 10
+          }
+        },
+        {
+          "fieldName": "Education Qualification",
+          "fieldKey": "education",
+          "fieldId": 52,
+          "fieldType": "dropdown",
+          "attributes": {
+            "mandatory": "y",
+            "infoText": "",
+            "locked": 0,
+            "sortOrder": 6,
+            "validationRule": "textonly",
+            "values": [
+              {
+                "option": "Graduate",
+                "child": ""
+              },
+              {
+                "option": "Post Graduate",
+                "child": ""
+              },
+              {
+                "option": "Doctorate",
+                "child": ""
+              },
+              {
+                "option": "Other",
+                "child": ""
+              }
+            ]
+          }
+        },
+        {
+          "fieldName": "PAN",
+          "fieldKey": "pan",
+          "fieldId": 44,
+          "fieldType": "text",
+          "attributes": {
+            "mandatory": "y",
+            "infoText": "",
+            "locked": 1,
+            "sortOrder": 7,
+            "validationRule": "pan",
+            "placeHolder": "Enter Pan Number",
+            "min": 10,
+            "max": 10
+          }
+        },
+        {
+          "fieldName": "Are you an existing customer of HDFC Bank",
+          "fieldKey": "extng_cust",
+          "fieldId": 133,
+          "fieldType": "radio",
+          "attributes": {
+            "mandatory": "y",
+            "infoText": "",
+            "locked": 0,
+            "sortOrder": 8,
+            "validationRule": "",
+            "values": [
+              {
+                "option": "Yes",
+                "child": [
+                  {
+                    "fieldName": "Do you have a salary account in HDFC Bank",
+                    "fieldKey": "sal_acct",
+                    "fieldId": 134,
+                    "fieldType": "radio",
+                    "attributes": {
+                      "mandatory": "y",
+                      "infoText": "",
+                      "locked": 0,
+                      "sortOrder": 9,
+                      "validationRule": "",
+                      "values": [
+                        {
+                          "option": "Yes",
+                          "child": [
+                            {
+                              "fieldName": "Application Type",
+                              "fieldKey": "appl_type",
+                              "fieldId": 106,
+                              "fieldType": "text",
+                              "attributes": {
+                                "mandatory": "y",
+                                "infoText": "",
+                                "locked": 0,
+                                "sortOrder": 12,
+                                "validationRule": "string",
+                                "placeHolder": "Enter Application Type",
+                                "min": 3,
+                                "max": 3
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "option": "No",
+                          "child": ""
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "option": "No",
+                "child": ""
+              }
+            ]
+          }
+        },
+        {
+          "fieldName": "Personal Email Address",
+          "fieldKey": "email",
+          "fieldId": 43,
+          "fieldType": "text",
+          "attributes": {
+            "mandatory": "y",
+            "infoText": "",
+            "locked": 1,
+            "sortOrder": 10,
+            "validationRule": "email",
+            "placeHolder": "Enter Email ID",
+            "min": 5,
+            "max": 100
+          }
+        },
+        {
+          "fieldName": "Marital Status",
+          "fieldKey": "m_status",
+          "fieldId": 50,
+          "fieldType": "dropdown",
+          "attributes": {
+            "mandatory": "y",
+            "infoText": "",
+            "locked": 0,
+            "sortOrder": 11,
+            "validationRule": "",
+            "values": [
+              {
+                "option": "Married",
+                "child": ""
+              },
+              {
+                "option": "Single",
+                "child": ""
+              },
+              {
+                "option": "Divorcee",
+                "child": ""
+              },
+              {
+                "option": "Widow",
+                "child": ""
+              }
+            ]
+          }
+        }
+      ],
+      "residence": [
+        {
+          "fieldName": "Address Line 1",
+          "fieldKey": "res_adrs1",
+          "fieldId": 61,
+          "fieldType": "text",
+          "attributes": {
+            "mandatory": "y",
+            "infoText": "",
+            "locked": 0,
+            "sortOrder": 1,
+            "validationRule": "alpha_numeric",
+            "placeHolder": "Enter Residence Address 1",
+            "min": 3,
+            "max": 30
+          }
+        },
+        {
+          "fieldName": "Address Line 2",
+          "fieldKey": "res_adrs2",
+          "fieldId": 62,
+          "fieldType": "text",
+          "attributes": {
+            "mandatory": "n",
+            "infoText": "",
+            "locked": 0,
+            "sortOrder": 2,
+            "validationRule": "alpha_numeric",
+            "placeHolder": "Enter Residence Address 2",
+            "min": 3,
+            "max": 30
+          }
+        },
+        {
+          "fieldName": "Pin Code",
+          "fieldKey": "res_pin",
+          "fieldId": 66,
+          "fieldType": "autosuggest",
+          "attributes": {
+            "mandatory": "y",
+            "infoText": "",
+            "locked": 0,
+            "sortOrder": 3,
+            "validationRule": "number",
+            "placeHolder": "Enter Pincode",
+            "min": 6,
+            "max": 6
+          }
+        },
+        {
+          "fieldName": "City",
+          "fieldKey": "res_city",
+          "fieldId": 78,
+          "fieldType": "text",
+          "attributes": {
+            "mandatory": "y",
+            "infoText": "",
+            "locked": 0,
+            "sortOrder": 4,
+            "validationRule": "textonly",
+            "placeHolder": "Enter city",
+            "min": 3,
+            "max": 30
+          }
+        },
+        {
+          "fieldName": "State",
+          "fieldKey": "res_state",
+          "fieldId": 79,
+          "fieldType": "text",
+          "attributes": {
+            "mandatory": "y",
+            "infoText": "",
+            "locked": 0,
+            "sortOrder": 5,
+            "validationRule": "textonly",
+            "placeHolder": "Enter State",
+            "min": 3,
+            "max": 20
+          }
+        },
+        {
+          "fieldName": "Year at Current Residence",
+          "fieldKey": "res_since",
+          "fieldId": 140,
+          "fieldType": "calender",
+          "attributes": {
+            "mandatory": "y",
+            "infoText": "",
+            "locked": 0,
+            "sortOrder": 6,
+            "validationRule": "number",
+            "placeHolder": "Enter Year at Current Residence Ex- (2000)"
+          }
+        },
+        {
+          "fieldName": "Year at Current City",
+          "fieldKey": "city_year",
+          "fieldId": 111,
+          "fieldType": "calender",
+          "attributes": {
+            "mandatory": "y",
+            "infoText": "",
+            "locked": 0,
+            "sortOrder": 7,
+            "validationRule": "number",
+            "placeHolder": "Enter Year at Current City Ex - (2010)"
+          }
+        },
+        {
+          "fieldName": "Is residence address same as mailing address",
+          "fieldKey": "res_mail",
+          "fieldId": 121,
+          "fieldType": "radio",
+          "attributes": {
+            "mandatory": "y",
+            "infoText": "",
+            "locked": 0,
+            "sortOrder": 8,
+            "validationRule": "",
+            "values": [
+              {
+                "option": "Yes",
+                "child": ""
+              },
+              {
+                "option": "No",
+                "child": ""
+              }
+            ]
+          }
+        },
+        {
+          "fieldName": "Residence Type",
+          "fieldKey": "cur_res_type",
+          "fieldId": 67,
+          "fieldType": "dropdown",
+          "attributes": {
+            "mandatory": "y",
+            "infoText": "",
+            "locked": 1,
+            "sortOrder": 9,
+            "validationRule": "",
+            "values": [
+              {
+                "option": "Owned",
+                "child": ""
+              },
+              {
+                "option": "Rented",
+                "child": ""
+              }
+            ]
+          }
+        }
+      ],
+      "employment": [
+        {
+          "fieldName": "Employment Type",
+          "fieldKey": "emp_type",
+          "fieldId": 2,
+          "fieldType": "dropdown",
+          "attributes": {
+            "mandatory": "y",
+            "infoText": "",
+            "locked": 0,
+            "sortOrder": 1,
+            "validationRule": "",
+            "values": [
+              {
+                "option": "Self-Employment",
+                "child": ""
+              },
+              {
+                "option": "Salaried",
+                "child": ""
+              }
+            ]
+          }
+        },
+        {
+          "fieldName": "Net Monthly Income",
+          "fieldKey": "mnthly_slry",
+          "fieldId": 14,
+          "fieldType": "text",
+          "attributes": {
+            "mandatory": "y",
+            "infoText": "",
+            "locked": 0,
+            "sortOrder": 2,
+            "validationRule": "price",
+            "placeHolder": "Enter Net Monthly Income",
+            "min": 4,
+            "max": 8
+          }
+        },
+        {
+          "fieldName": "Company Name",
+          "fieldKey": "emp_name",
+          "fieldId": 122,
+          "fieldType": "autosuggest",
+          "attributes": {
+            "mandatory": "y",
+            "infoText": "",
+            "locked": 0,
+            "sortOrder": 3,
+            "validationRule": "string",
+            "placeHolder": "Enter Employer name"
+          }
+        },
+        {
+          "fieldName": "Work Address Line 1",
+          "fieldKey": "work_add1",
+          "fieldId": 123,
+          "fieldType": "text",
+          "attributes": {
+            "mandatory": "y",
+            "infoText": "",
+            "locked": 0,
+            "sortOrder": 4,
+            "validationRule": "string",
+            "placeHolder": "Enter Work Address",
+            "min": 3,
+            "max": 30
+          }
+        },
+        {
+          "fieldName": "Work Address Line 2",
+          "fieldKey": "work_add2",
+          "fieldId": 124,
+          "fieldType": "text",
+          "attributes": {
+            "mandatory": "y",
+            "infoText": "",
+            "locked": 0,
+            "sortOrder": 5,
+            "validationRule": "string",
+            "placeHolder": "Enter Work Address",
+            "min": 3,
+            "max": 30
+          }
+        },
+        {
+          "fieldName": "Work Address Pin   Code",
+          "fieldKey": "work_pincode",
+          "fieldId": 113,
+          "fieldType": "autosuggest",
+          "attributes": {
+            "mandatory": "y",
+            "infoText": "",
+            "locked": 0,
+            "sortOrder": 6,
+            "validationRule": "number",
+            "placeHolder": "Enter pincode",
+            "min": 6,
+            "max": 6
+          }
+        },
+        {
+          "fieldName": "Work State",
+          "fieldKey": "work_state",
+          "fieldId": 127,
+          "fieldType": "text",
+          "attributes": {
+            "mandatory": "y",
+            "infoText": "",
+            "locked": 0,
+            "sortOrder": 7,
+            "validationRule": "string",
+            "placeHolder": "Enter State",
+            "min": 3,
+            "max": 30
+          }
+        },
+        {
+          "fieldName": "Work City",
+          "fieldKey": "work_city",
+          "fieldId": 126,
+          "fieldType": "text",
+          "attributes": {
+            "mandatory": "y",
+            "infoText": "",
+            "locked": 0,
+            "sortOrder": 8,
+            "validationRule": "string",
+            "placeHolder": "Enter City",
+            "min": 3,
+            "max": 30
+          }
+        },
+        {
+          "fieldName": "Do you have a valid income Proof",
+          "fieldKey": "income_proof",
+          "fieldId": 69,
+          "fieldType": "radio",
+          "attributes": {
+            "mandatory": "y",
+            "infoText": "",
+            "locked": 0,
+            "sortOrder": 9,
+            "validationRule": "",
+            "values": [
+              {
+                "option": "Yes",
+                "child": ""
+              },
+              {
+                "option": "No",
+                "child": ""
+              }
+            ]
+          }
+        }
+      ],
+      "other_dtls": [
+        {
+          "fieldName": "Reference Name",
+          "fieldKey": "ref1_name",
+          "fieldId": 25,
+          "fieldType": "text",
+          "attributes": {
+            "mandatory": "y",
+            "infoText": "",
+            "locked": 0,
+            "sortOrder": 1,
+            "validationRule": "textonly",
+            "placeHolder": "Enter Reference Name",
+            "min": 3,
+            "max": 30
+          }
+        },
+        {
+          "fieldName": "Reference Mobile Number",
+          "fieldKey": "ref1_mob",
+          "fieldId": 26,
+          "fieldType": "text",
+          "attributes": {
+            "mandatory": "y",
+            "infoText": "",
+            "locked": 0,
+            "sortOrder": 2,
+            "validationRule": "mobile",
+            "placeHolder": "Enter Reference Mobile Number",
+            "min": 10,
+            "max": 10
+          }
+        }
+      ],
+      "doc_sub": [
+        {
+          "hasParentRule": 0,
+          "fieldName": "Select your Identity Proof",
+          "fieldKey": "sel_id_proof",
+          "fieldType": "file_upload",
+          "fieldId": 74,
+          "doc_sub_mandatory": 1,
+          "attributes": {
+            "placeHolder": "Please select the value",
+            "infoText": "",
+            "locked": 0,
+            "mandatory": "y",
+            "doc_sub_list": [
+              {
+                "name": "Ration Card",
+                "key": "Ration Card",
+                "doc_count": 1,
+                "infoText": "",
+                "locked": 0,
+                "file_size": "5 MB",
+                "file_type": [
+                  "jpg",
+                  "jpeg",
+                  "pdf"
+                ]
+              },
+              {
+                "name": "Driving License",
+                "key": "Driving License",
+                "doc_count": 1,
+                "infoText": "",
+                "locked": 0,
+                "file_size": "5 MB",
+                "file_type": [
+                  "jpg",
+                  "jpeg",
+                  "pdf"
+                ]
+              },
+              {
+                "name": "Voter ID",
+                "key": "Voter ID",
+                "doc_count": 1,
+                "infoText": "",
+                "locked": 0,
+                "file_size": "5 MB",
+                "file_type": [
+                  "jpg",
+                  "jpeg",
+                  "pdf"
+                ]
+              },
+              {
+                "name": "Narega Job Card",
+                "key": "Narega Job Card",
+                "doc_count": 1,
+                "infoText": "",
+                "locked": 0,
+                "file_size": "5 MB",
+                "file_type": [
+                  "jpg",
+                  "jpeg",
+                  "pdf"
+                ]
+              },
+              {
+                "name": "Central/State Govt. ID card",
+                "key": "Central/State Govt. ID card",
+                "doc_count": "1",
+                "infoText": "",
+                "locked": 0,
+                "file_size": "5 MB",
+                "file_type": [
+                  "jpg",
+                  "jpeg",
+                  "pdf"
+                ]
+              },
+              {
+                "name": "Passport Copy",
+                "key": "Passport Copy",
+                "doc_count": "1",
+                "infoText": "",
+                "locked": 0,
+                "file_size": "5 MB",
+                "file_type": [
+                  "jpg",
+                  "jpeg",
+                  "pdf"
+                ]
+              },
+              {
+                "name": "Electricity Bill",
+                "key": "Electricity Bill",
+                "doc_count": "1",
+                "infoText": "",
+                "locked": 0,
+                "file_size": "5 MB",
+                "file_type": [
+                  "jpg",
+                  "jpeg",
+                  "pdf"
+                ]
+              },
+              {
+                "name": "LIC Policy",
+                "key": "LIC Policy",
+                "doc_count": "1",
+                "infoText": "",
+                "locked": 0,
+                "file_size": "5 MB",
+                "file_type": [
+                  "jpg",
+                  "jpeg",
+                  "pdf"
+                ]
+              },
+              {
+                "name": "Rent Agreement",
+                "key": "Rent Agreement",
+                "doc_count": "1",
+                "infoText": "",
+                "locked": 0,
+                "file_size": "5 MB",
+                "file_type": [
+                  "jpg",
+                  "jpeg",
+                  "pdf"
+                ]
+              },
+              {
+                "name": "Telephone Bill",
+                "key": "Telephone Bill",
+                "doc_count": "1",
+                "infoText": "",
+                "locked": 0,
+                "file_size": "5 MB",
+                "file_type": [
+                  "jpg",
+                  "jpeg",
+                  "pdf"
+                ]
+              },
+              {
+                "name": "Pan Card",
+                "key": "Pan Card",
+                "doc_count": "1",
+                "infoText": "",
+                "locked": 0,
+                "file_size": "5 MB",
+                "file_type": [
+                  "jpg",
+                  "jpeg",
+                  "pdf"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "hasParentRule": 0,
+          "fieldName": "Select your Address Proof",
+          "fieldKey": "addrs_proof",
+          "fieldType": "file_upload",
+          "fieldId": 73,
+          "doc_sub_mandatory": 1,
+          "attributes": {
+            "placeHolder": "Please select the value",
+            "infoText": "",
+            "locked": 0,
+            "mandatory": "y",
+            "doc_sub_list": [
+              {
+                "name": "Passport",
+                "key": "Passport",
+                "doc_count": 1,
+                "infoText": "",
+                "locked": 0,
+                "file_size": "5 MB",
+                "file_type": [
+                  "jpg",
+                  "jpeg",
+                  "pdf"
+                ]
+              },
+              {
+                "name": "Driving License",
+                "key": "Driving License",
+                "doc_count": 1,
+                "infoText": "",
+                "locked": 0,
+                "file_size": "5 MB",
+                "file_type": [
+                  "jpg",
+                  "jpeg",
+                  "pdf"
+                ]
+              },
+              {
+                "name": "Voters ID",
+                "key": "Voters ID",
+                "doc_count": 1,
+                "infoText": "",
+                "locked": 0,
+                "file_size": "5 MB",
+                "file_type": [
+                  "jpg",
+                  "jpeg",
+                  "pdf"
+                ]
+              },
+              {
+                "name": "Ration Card",
+                "key": "Ration Card",
+                "doc_count": 1,
+                "infoText": "",
+                "locked": 0,
+                "file_size": "5 MB",
+                "file_type": [
+                  "jpg",
+                  "jpeg",
+                  "pdf"
+                ]
+              },
+              {
+                "name": "Sales Deed",
+                "key": "Sales Deed",
+                "doc_count": 1,
+                "infoText": "",
+                "locked": 0,
+                "file_size": "5 MB",
+                "file_type": [
+                  "jpg",
+                  "jpeg",
+                  "pdf"
+                ]
+              },
+              {
+                "name": "LIC Policy",
+                "key": "LIC Policy",
+                "doc_count": 1,
+                "infoText": "",
+                "locked": 0,
+                "file_size": "5 MB",
+                "file_type": [
+                  "jpg",
+                  "jpeg",
+                  "pdf"
+                ]
+              },
+              {
+                "name": "Gas Bill",
+                "key": "Gas Bill",
+                "doc_count": "1",
+                "infoText": "",
+                "locked": 0,
+                "file_size": "5 MB",
+                "file_type": [
+                  "jpg",
+                  "jpeg",
+                  "pdf"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "hasParentRule": 0,
+          "fieldName": "Select your Income Proof",
+          "fieldKey": "sel_inc_proof_sal",
+          "fieldType": "file_upload",
+          "fieldId": 72,
+          "doc_sub_mandatory": 1,
+          "attributes": {
+            "placeHolder": "Please select the value",
+            "infoText": "",
+            "locked": 0,
+            "mandatory": "y",
+            "doc_sub_list": [
+              {
+                "name": "ITR Last 2 years",
+                "key": "ITR Last 2 years",
+                "doc_count": 1,
+                "infoText": "",
+                "locked": 0,
+                "file_size": "5 MB",
+                "file_type": [
+                  "jpg",
+                  "jpeg",
+                  "pdf"
+                ]
+              },
+              {
+                "name": "Credit Card Statement ",
+                "key": "Credit Card Statement ",
+                "doc_count": "1",
+                "infoText": "",
+                "locked": 0,
+                "file_size": "5 MB",
+                "file_type": [
+                  "jpg",
+                  "jpeg",
+                  "pdf"
+                ]
+              },
+              {
+                "name": "Pay Slip - Last two months",
+                "key": "Pay Slip - Last two months",
+                "doc_count": "1",
+                "infoText": "",
+                "locked": 0,
+                "file_size": "5 MB",
+                "file_type": [
+                  "jpg",
+                  "jpeg",
+                  "pdf"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "hasParentRule": 1,
+          "parentFieldKey": "income_proof",
+          "parentFieldName": "Do you have a valid income Proof",
+          "parentFieldvalue": "No",
+          "fieldName": "Select your Banking Statement",
+          "fieldKey": "bnk_stmt",
+          "fieldType": "file_upload",
+          "doc_sub_mandatory": 1,
+          "attributes": {
+            "placeHolder": "Please select the value",
+            "infoText": "",
+            "locked": 1,
+            "mandatory": "y",
+            "doc_sub_list": [
+              {
+                "name": "Latest 6 months bank statement ",
+                "key": "Latest 6 months bank statement ",
+                "doc_count": "1",
+                "infoText": "",
+                "locked": 1,
+                "file_size": "5 MB",
+                "file_type": [
+                  "jpg",
+                  "jpeg",
+                  "pdf"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "hasParentRule": 1,
+          "parentFieldKey": "emp_type",
+          "parentFieldName": "Employment Type",
+          "parentFieldvalue": "Self Employed",
+          "fieldName": "Select Income Proof for Business",
+          "fieldKey": "sel_inc_proof_sel",
+          "fieldType": "file_upload",
+          "doc_sub_mandatory": 1,
+          "attributes": {
+            "placeHolder": "Please select the value",
+            "infoText": "",
+            "locked": 0,
+            "mandatory": "y",
+            "doc_sub_list": [
+              {
+                "name": "Audited P&L and B/S for Last 2 ",
+                "key": "Audited P&L and B/S for Last 2 ",
+                "doc_count": "1",
+                "infoText": "",
+                "locked": 0,
+                "file_size": "5 MB",
+                "file_type": [
+                  "jpg",
+                  "jpeg",
+                  "pdf"
+                ]
+              },
+              {
+                "name": "IT Returns for Last 2 years",
+                "key": "IT Returns for Last 2 years",
+                "doc_count": "1",
+                "infoText": "",
+                "locked": 0,
+                "file_size": "5 MB",
+                "file_type": [
+                  "jpg",
+                  "jpeg",
+                  "pdf"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "action": "bank_fields"
+}
